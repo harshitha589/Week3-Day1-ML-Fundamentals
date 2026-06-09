@@ -1,91 +1,21 @@
-# Machine Learning Fundamentals
+# Machine Learning Fundamentals Challenge
 
 ## Overview
 
-This project demonstrates the complete Machine Learning workflow using Python and Scikit-learn. The objective of this project is to build a predictive model that estimates student marks based on study hours, attendance, and assignment completion. The project covers data exploration, feature selection, train-test splitting, model training, prediction, evaluation, and data visualization.
+This project demonstrates the complete Machine Learning workflow using Python and Scikit-learn. The objective is to predict student marks based on Study Hours, Attendance, and Assignments using a Linear Regression model.
+
+The project covers data exploration, feature selection, train-test splitting, model training, prediction, evaluation, and data visualization using Plotly.
 
 ## Dataset
 
 The Student Performance Dataset contains the following attributes:
 
-* Study_Hours
-* Attendance
-* Assignments
-* Marks
-
-The first three attributes are used as input features, while Marks is used as the target variable.
-
-## Project Tasks
-
-### Part 1: Dataset Exploration
-
-* Loaded the dataset using Pandas
-* Displayed first and last five rows
-* Checked dataset shape
-* Displayed column names
-* Examined data types
-* Generated summary statistics
-
-### Part 2: Features and Label Identification
-
-* Selected Study_Hours, Attendance, and Assignments as features
-* Selected Marks as the label
-
-### Part 3: Machine Learning Workflow
-
-* Data Collection
-* Data Cleaning
-* Feature Selection
-* Train-Test Split
-* Model Training
-* Testing
-* Evaluation
-* Prediction
-
-### Part 4: Train-Test Split
-
-* Split the dataset into 80% training data and 20% testing data
-
-### Part 5: Model Training
-
-* Implemented Linear Regression using Scikit-learn
-* Trained the model using training data
-* Obtained model coefficients and intercept
-
-### Part 6: Predictions
-
-* Predicted marks for new student records
-
-### Part 7: Actual vs Predicted Comparison
-
-* Compared actual marks with predicted marks
-* Calculated prediction differences
-
-### Part 8: Model Evaluation
-
-* Mean Absolute Error (MAE)
-* R² Score
-
-### Part 9: Data Visualization
-
-Created the following visualizations using Plotly:
-
-* Study Hours vs Marks
-* Attendance vs Marks
-* Assignments vs Marks
-* Regression Line Visualization
-* Predicted Marks Trend
-
-### Part 10: Research Activity
-
-Studied and documented:
-
-* Machine Learning
-* Linear Regression
-* Features
-* Labels
-* Training Data vs Testing Data
-* Real-life Applications of Machine Learning
+| Feature     | Description                              |
+| ----------- | ---------------------------------------- |
+| Study_Hours | Number of hours studied                  |
+| Attendance  | Student attendance percentage            |
+| Assignments | Number of assignments completed          |
+| Marks       | Student marks obtained (Target Variable) |
 
 ## Technologies Used
 
@@ -94,39 +24,91 @@ Studied and documented:
 * NumPy
 * Scikit-learn
 * Plotly
-* Jupyter Notebook
+* Google Colab
 
+## Project Workflow
+
+### 1. Dataset Exploration
+
+* Loaded the dataset using Pandas
+* Displayed first and last five rows
+* Checked dataset shape
+* Displayed column names
+* Examined data types
+* Generated summary statistics
+
+### 2. Feature and Label Identification
+
+* Features:
+
+  * Study_Hours
+  * Attendance
+  * Assignments
+* Label:
+
+  * Marks
+
+### 3. Train-Test Split
+
+* Training Data: 80%
+* Testing Data: 20%
+
+### 4. Model Training
+
+* Implemented Linear Regression
+* Trained the model using training data
+* Obtained slope (coefficients) and intercept
+
+### 5. Predictions
+
+* Predicted marks for new student records
+
+### 6. Model Evaluation
+
+* Mean Absolute Error (MAE)
+* R² Score
+
+### 7. Data Visualization
+
+Created the following visualizations using Plotly:
+
+* Study Hours vs Marks
+* Attendance vs Marks
+* Assignments vs Marks
+* Regression Line Visualization
+* Predicted Marks Trend
+* 
 ## Repository Structure
 
-week3-day1-ml-fundamentals/
-
-├── student_performance.csv
-
+```text
+Week3-Day1-ML-Fundamentals
+│
 ├── assignment.ipynb
-
+├── student_performance.csv
 ├── ml_workflow.txt
-
 ├── answers.txt
+├── README.md
+│
+└── screenshots
+    ├── plot1.png
+    ├── plot2.png
+    ├── plot3.png
+    ├── plot4.png
+    └── plot5.png
+```
 
-├── screenshots/
+## Learning Outcomes
 
-│   ├── plot1.png
+Through this project, I learned:
 
-│   ├── plot2.png
-
-│   ├── plot3.png
-
-│   ├── plot4.png
-
-│   └── plot5.png
-
-└── README.md
+* Basics of Machine Learning
+* Features and Labels
+* Train-Test Split
+* Linear Regression
+* Model Evaluation
+* Data Visualization with Plotly
+* Making Predictions using New Data
 
 ## Conclusion
 
-This project helped in understanding the fundamentals of Machine Learning, including data preprocessing, feature selection, model training, evaluation, prediction, and visualization. It also provided hands-on experience with Linear Regression and the complete Machine Learning workflow.
-
-## Author
-
-Harshitha R
-B.Tech Computer Science and Engineering
+This project provided hands-on experience with the complete Machine Learning workflow. It helped in understanding how data is prepared, how models are trained, evaluated, and how predictions are made using Linear Regression.
