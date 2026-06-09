@@ -1,4 +1,4 @@
-# Machine Learning Fundamentals Challenge
+# Machine Learning Fundamentals
 
 ## Overview
 
@@ -77,7 +77,7 @@ Created the following visualizations using Plotly:
 * Assignments vs Marks
 * Regression Line Visualization
 * Predicted Marks Trend
-* 
+
 ## Repository Structure
 
 ```text
